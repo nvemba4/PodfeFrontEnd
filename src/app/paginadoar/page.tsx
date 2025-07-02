@@ -1,11 +1,7 @@
 'use client';
 
 import * as React from "react";
-import { useState, useRef } from "react";
-import  SelectedFormDoacao from "@/components/SelectedFormDoacao"     
-import  FormularioRoupas from "@/components/FormularioRoupas"  
-import  FormularioAlimento from "@/components/FormularioAlimento"  
-import  FormularioOutros from "@/components/FormularioOutros" 
+import { useState, useRef } from "react";   
 export default function PaginaDoarPage() {
 
 const [tipoDoacao, setTipoDoacao] = useState('');
@@ -21,21 +17,21 @@ const [fromDados, setfromDados] = useState('');
         return (   
           <div className="mt-6">
             <h3 className="text-xl font-semibold text-blue-700 mb-4">Formulário para Doação de Roupas</h3>
-          <FormularioRoupas onSubmit={setfromDados} />
+         
           </div>
         );
       case 'Alimento': 
         return (
           <div className="mt-6">  
             <h3 className="text-xl font-semibold text-blue-700 mb-4">Formulário para Doação de Alimentos</h3>
-          <FormularioAlimento onSubmit={setfromDados} />
+         
           </div>
         );
       case 'Outro':
         return (
             <div className="mt-6">  
             <h3 className="text-xl font-semibold text-blue-700 mb-4"> Formulário para Outros Tipos de Doação</h3>
-          <FormularioOutros onSubmit={setfromDados} />
+          
           </div>
         );
       default:
@@ -52,7 +48,7 @@ const [fromDados, setfromDados] = useState('');
         </h2> 
 
         <div className="mb-8 flex justify-center">
-          <SelectedFormDoacao onSelectChange={setTipoDoacao} />
+         
         </div>
 
         {renderFormulario()}
