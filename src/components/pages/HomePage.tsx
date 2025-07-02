@@ -29,6 +29,12 @@ import BannerCarousel from "@/components/BannerCarousel"
 import NoticiasePublicidade from "@/components/NoticiasePublicidade"
 import Midia from "@/components/Midia"
 import PublicBanner from "@/components/PublicBanner"
+import ProximoEventos from "@/components/ProximoEventos"
+import Conferences from "@/components/Conferences"
+import UltimasNoticias from "@/components/UltimasNoticias"
+import Doacao from "@/components/Doacao"
+import NossosParceiros from "@/components/NossosParceiros"
+import Footer from "@/components/Footer"
 
 // Mock data for demonstration
 const categories: Category[] = [
@@ -422,6 +428,7 @@ const HomePage: React.FC = () => {
       />
 
       <main className="container mx-auto px-0 space-y-12">
+       
         {/* Banner Carousel with row arrows below */}
         <div className="pt-0">
           <BannerCarousel />
@@ -429,12 +436,19 @@ const HomePage: React.FC = () => {
           <PublicBanner/>
           <NoticiasePublicidade />
           <Midia />
+          <ProximoEventos />
+          <Conferences />
+          <UltimasNoticias />
+          <Doacao />
+          <NossosParceiros />
+         
         </div>
 
         
 
         
       </main>
+      <Footer />
     </div>
   )
 }

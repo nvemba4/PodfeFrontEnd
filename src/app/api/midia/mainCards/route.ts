@@ -3,32 +3,32 @@ import { NextResponse } from "next/server";
 export async function GET() {
   return NextResponse.json([
     {
-      image: "/images/Podfe_Cover.png",
+      image: "/images/ProfetaCastelo.png",
       category: "Podcast",
       title: "Mudar para a cidade grande pode ser bastante estressante",
     },
     {
-      image: "/images/Rectangle_2.png",
+      image: "/images/Meseparei.png",
       category: "Solidariedade",
       title: "Mudar para a cidade grande pode ser bastante estressante",
     },
     {
-      image: "/images/slide_3.png",
+      image: "/images/TudosobreCasamento.png",
       category: "Podcast",
       title: "Mudar para a cidade grande pode ser bastante estressante",
     },
     {
-      image: "/images/Curadas_para_curar.png",
+      image: "/images/FaithinMotion.png",
       category: "Fé",
       title: "Mudar para a cidade grande pode ser bastante estressante",
     },
     {
-      image: "/images/slide_1.png",
+      image: "/images/Africanamericansoncast.png",
       category: "Evento",
       title: "Mudar para a cidade grande pode ser bastante estressante",
     },
     {
-      image: "/images/slide_2.png",
+      image: "/images/AlgenuraFinda.png",
       category: "Evento",
       title: "Mudar para a cidade grande pode ser bastante estressante",
     },

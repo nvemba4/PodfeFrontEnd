@@ -70,7 +70,7 @@ const Midia: React.FC = () => {
         <div className="md:col-span-2 flex flex-col gap-8">
           {col3Cards.map((item, idx) => (
             <div key={idx} className="flex flex-col h-full">
-              <div className="w-full h-full aspect-video bg-gray-100  overflow-hidden mb-3">
+              <div className="w-full h-full  bg-gray-100  overflow-hidden mb-3">
                 <img
                   src={item.image}
                   alt={item.title}
